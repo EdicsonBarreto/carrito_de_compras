@@ -1,6 +1,26 @@
+.hero {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cart {
+  /* Estilos para el carrito de compras */
+}
+
+
 :root {
   --header-height:60px;
-  --primary-color: hsl(0, 91%, 52%);
+  --primary-color: hsl(0, 96%, 51%);
   --body-color:hsl(286, 4%, 97%);
   --text-color:hsl( 0, 0%, 20%);;
   --title-color:hsl( 0, 0%, 10%);
@@ -32,6 +52,7 @@
   --z-fixed: 100;
   --z-modal: 200;
 }
+
 @media (min-width:992px) {
   :root {
     --big-font: 2.5rem;
@@ -372,7 +393,7 @@ align-items: center;
   color: var(--text-color);
   background-color: var(--primary-color);
 }
- 
+                                      
 .footer__bottom {
   text-align: center;
 }
@@ -478,12 +499,13 @@ align-items: center;
 }
 
 
-.cart::footer {
+.cart__footer {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   background-color: var(--card-color);
+  padding: var(--sp-1);
   row-gap: var(--sp-1);
 }
 
@@ -499,7 +521,7 @@ align-items: center;
 
 .btn--buy {
   grid-column: span 4;
-  background-color: var(sp --title-color);
+  background-color: var(--title-color);
   color: var(--bg-color);
   padding: var(--sp-1);
 }
