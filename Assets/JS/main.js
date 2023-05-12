@@ -19,7 +19,7 @@ showCart()
 /* End UI Elements */
 
 /* Products */  
-products(await getProducts())
+const {db, printProducts} = products(await getProducts())
 
 /* Carrito*/
 cart(db, printProducts)

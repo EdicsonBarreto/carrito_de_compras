@@ -1,9 +1,11 @@
-function products(){
+function products(products){
     const db = [...products]
 
+    console.log(db)
+
     function printProducts () {
-        const productsDOM = document.querySelector('products__container')
-        let htmlproduct = ''
+        const productsDOM = document.querySelector('.products__container')
+        let htmlproduct = '';
 
         for (let product of db){
             htmlproduct +=  ` <article class="product">

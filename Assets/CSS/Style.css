@@ -395,6 +395,7 @@ align-items: center;
   /*show cart*/
 .show--cart {
   right: 0;
+  top:60px
 }
 
 
@@ -536,9 +537,7 @@ align-items: center;
   .container {
     margin:0 auto;
 }
-.cart {
-  top:var(--header-height)
-}
+
 }
 
 
