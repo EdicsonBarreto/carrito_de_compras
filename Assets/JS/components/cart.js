@@ -6,12 +6,12 @@ function prinCart () {
     console.log(cart)
 
     console.log('items:' + showItemsCount())
-    console.log('items:' + showTotal() 
+    console.log('items:' + showTotal() )
     
 }
     
 function addToCart (id, qty= 1){
-    const itemFinded = cart,find(i => i,id ===id)
+    const itemFinded = cart.find(i => i,id ===id)
 
     if (itemFinded) {
         console.log('El producto con el id' + id + ' ya esta')
@@ -34,7 +34,7 @@ function addToCart (id, qty= 1){
 
 function removeFromCart ({id, qty}){
     const itemFinded = cart.find(i => i.id === id)
-
+}
     const result = itemFinded.qty - qty
     if (result > 0) {
         console.log('Quedan productos con el id' + id)
@@ -88,4 +88,4 @@ function charckout () {
     window.alert('Gracias por su compra')
 }
 checkout()
-export default cart
+export default cart 
